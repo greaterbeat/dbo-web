@@ -1,0 +1,113 @@
+.App {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 10vh 1fr 10vh;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 100%;
+  justify-content: center;
+  background-color: white;
+}
+
+td, th {
+  border: 1px solid black;
+}
+
+th {
+  background-color: lightgray;
+}
+
+tr .green {
+  color: green;
+}
+
+tr .red {
+  color: red;
+}
+
+.App-label-container {
+  width: 78px;
+  border: 1px solid red;
+  text-align: center;
+  line-height: 20px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header, .App-footer {
+  background-color: cadetblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.App-header {
+  font-size: 35px;
+}
+
+.App-footer {
+  font-size: 20px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 100px auto 100px auto;
+}
+
+thead, th {
+  position: sticky;
+  top: 0;
+  background-color: lightgrey;
+}
+
+.Table1, .Table2 {
+  height: 500px;
+  width: 1000px;
+  overflow: auto;
+}
+
+body {
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRB8Pj3x7tvCy_SAJEmxO0TRzVAiCfTIss4uh0gZ7B6dMcdv0hB&usqp=CAU");
+}
+
+.Checkbox {
+  background-color: white;
+  border: solid 1px black;
+}
+
+.selector h2{
+  max-width: 83px;
+  max-height: 42px;
+  font-size: small;
+  background-color: white;
+  border: 1px solid black;
+}
