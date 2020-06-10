@@ -2,9 +2,9 @@ import React from 'react';
 import {myStatementData} from '../../my-statement-data';
 
 export function Table({showDate, showTime,showType, showIncome, showOutcome}) {
-    const formatMonth = (month) => month < 10 ? '0' + month : month;
-    const formatDay = (day) => day < 10 ? '0' + day : day;
-    const formatTime = (time) => time < 10 ? '0' + time : time;
+    const format = (form) => form < 10 ? '0' + form : form;
+    /*const formatDay = (day) => day < 10 ? '0' + day : day;
+    const formatTime = (time) => time < 10 ? '0' + time : time;*/
     return (
        <div className = "Table1">
         <table>
@@ -29,8 +29,8 @@ export function Table({showDate, showTime,showType, showIncome, showOutcome}) {
             </thead>
            <tbody>
             {myStatementData.sort((a,b) => new Date(a.date) - new Date(b.date)).map(el => {
-                const tableDate = formatDay(new Date(el.date).getDate()) + '.' + formatMonth(new Date(el.date).getMonth() + 1) + '.' + new Date(el.date).getFullYear();
-                const tableTime = formatTime(new Date(el.date).getHours()) + ':' + formatTime(new Date(el.date).getMinutes()) + ':' + formatTime(new Date(el.date).getSeconds());
+                const tableDate = format(new Date(el.date).getDate()) + '.' + format(new Date(el.date).getMonth() + 1) + '.' + new Date(el.date).getFullYear();
+                const tableTime = format(new Date(el.date).getHours()) + ':' + format(new Date(el.date).getMinutes()) + ':' + format(new Date(el.date).getSeconds());
                 return (
                     <tr>
                         {showDate && <td>

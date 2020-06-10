@@ -8,12 +8,12 @@ table {
   border-spacing: 0;
   border-collapse: collapse;
   width: 100%;
-  justify-content: center;
   background-color: white;
 }
 
 td, th {
   border: 1px solid black;
+  height: 25px;
 }
 
 th {
@@ -35,19 +35,8 @@ tr .red {
   line-height: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header, .App-footer {
-  background-color: cadetblue;
+  background-color: #3d9cbc;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -57,30 +46,24 @@ tr .red {
 
 .App-header {
   font-size: 35px;
+  border-bottom: 1px solid black;
 }
 
 .App-footer {
   font-size: 20px;
+  border-top: 1px solid black;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .App-content {
   display: flex;
-  justify-content: space-between;
-  max-width: 1000px;
-  margin: 100px auto 100px auto;
+  justify-content: center;
+  width: 1000px;
+  height: 100%;
+  margin: 0 auto 0 auto;
 }
 
 thead, th {
@@ -90,7 +73,7 @@ thead, th {
 }
 
 .Table1, .Table2 {
-  height: 500px;
+  height: 776px;
   width: 1000px;
   overflow: auto;
 }
