@@ -82,7 +82,6 @@ export function Content() {
             </select>
             </div>
            </div>
-            <div>
             {selectedIndex === 0 ? (
                 <Table
                     showDate={showDate}
@@ -94,7 +93,6 @@ export function Content() {
             ) : (
                 <TableGroup/>
             )}
-            </div>
         </div>
     );
 }
